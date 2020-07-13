@@ -9,8 +9,8 @@
     ]
   },
   "scripts": {
-    "dev": "webpack-dev-server --env.TIPO=dev",
-    "production": "webpack --env.TIPO=dev"
+    "build": "webpack --env.TIPO=dev",
+    "dev": "webpack-dev-server --env.TIPO=dev"
   },
   "author": "",
   "license": "ISC",
