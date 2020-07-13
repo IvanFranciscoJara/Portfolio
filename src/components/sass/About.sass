@@ -1,0 +1,43 @@
+@import '../../Global'
+
+.ContainerAbout
+    position: relative
+    background-color: $P_White
+    width: 100%
+    min-height: 100vh
+    padding: 0
+    // overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $P_Black
+    @media screen and (max-width: 800px)
+        display: block
+    .TitleOne        
+        position: absolute
+        display: flex
+        width: 100%
+        height: 100% 
+        // border: 1px solid red
+        .Title
+            // border: 1px solid green
+            width: 100%
+            top: 0            
+            .TitleBackground       
+                overflow: hidden
+                color: $P_SoftGray                           
+    .Text
+        color: $P_White
+        z-index: 22
+        position: relative
+        h2
+            width: 50%
+            margin-left: 100px
+            font-size: 48px
+            font-weight: 600
+            @media screen and (max-width: 800px)
+                font-size: 30px
+                margin: 0
+                padding: 25px
+                width: 100%
+

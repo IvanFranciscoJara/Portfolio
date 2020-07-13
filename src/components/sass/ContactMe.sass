@@ -1,0 +1,54 @@
+@import '../../Global'
+
+.ContainerContactMe
+    position: relative
+    background-color: $P_White
+    width: 100%
+    min-height: 100vh
+    padding: 0
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: $P_Black
+
+    .Title
+        position: absolute
+        top: -10px
+        left: -50px
+        .TitleBackground                                            
+            color: $P_SoftGray      
+    .Email
+        color: $P_White
+        z-index: 22
+        position: relative
+        margin-bottom: 20px
+        @media screen and (max-width: 800px)
+            margin-bottom: 10px
+        h2                        
+            font-size: 48px
+            font-weight: 600
+            @media screen and (max-width: 800px)
+                font-size: 20px
+
+    .SocialNetwork
+        z-index: 22
+        display: flex
+        justify-content: center
+        align-items: center
+        div            
+            height: 150px
+            width: 150px
+            display: flex
+            justify-content: center
+            align-items: center
+            // border: 1px solid red
+            @media screen and (max-width: 800px)
+                height: 70px
+                width: 70px
+            svg
+                fill: $P_White
+                height: 50px
+                width: 50px
+            
