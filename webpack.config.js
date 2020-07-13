@@ -12,6 +12,9 @@ module.exports = env => {
       filename: 'index_bundle.js'
     },
     devtool: '#eval-source-map',
+    devServer: {
+      port: 9000
+    },
     node: {
       fs: 'empty'
     },
