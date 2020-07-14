@@ -22,17 +22,12 @@ let Projects = [
       }
     ],
     MainImage: 'Edu_Dashboard.png',
-    Tecnologies: [
-      'Javascript',
-      'Boostrap',
-      'CSS',
-      'HTML',
-      'ASP.NET',
-      'C#',
-      'Razor',
-      'Rdlc Reports',
-      'IIS',
-      'Sql Server'
+    Tecnologies: ['ASP.NET', 'Javascript', 'Boostrap', 'C#', 'Rdlc Reports', 'Sql Server'],
+    TecnologiesDetail: [
+      { Type: 'FrontEnd', Content: ['HTML', 'CSS', 'Javascript', 'Boostrap', 'Rdlc Reports', 'Razor'] },
+      { Type: 'BackEnd', Content: ['C#', 'ASP.NET', 'Sql Server', 'HTML'] },
+      { Type: 'Arquitecture', Content: ['IIS'] },
+      { Type: 'Others', Content: ['IIS'] }
     ],
     Photos: [
       {
@@ -81,17 +76,12 @@ let Projects = [
       }
     ],
     MainImage: 'Edu_Dashboard.png',
-    Tecnologies: [
-      'React',
-      'HTML',
-      'Javascript',
-      'Sass',
-      'WebPack',
-      'Express',
-      'JWT',
-      'Graphql and Rest API',
-      'IIS',
-      'Sql Server'
+    Tecnologies: ['React', 'Express', 'Graphql', 'Rest API', 'Sql Server'],
+    TecnologiesDetail: [
+      { Type: 'FrontEnd', Content: ['HTML', 'Sass', 'Javascript', 'React.js', 'Rdlc Reports', 'Razor'] },
+      { Type: 'BackEnd', Content: ['Express.js', 'Graphql and Rest API', 'Sql Server'] },
+      { Type: 'Arquitecture', Content: ['IIS'] },
+      { Type: 'Others', Content: ['WebPack', 'JsonWebToken'] }
     ],
     Photos: [
       {
@@ -105,6 +95,48 @@ let Projects = [
     ],
     NextProject: 'ClickChat',
     PreviousProject: 'Educorp'
+  },
+  {
+    Title: 'ClickChat',
+    Time: '2020 - now',
+    Descriptions: [
+      'This aplication was build with the intention to give users a way to send message privatly with out registratión or data store',
+      'You can message, files, photos and audios also can create private chat groups'
+    ],
+    Role: 'Frontend, backend, database',
+    Features: [
+      {
+        Type: 'Size',
+        Feature: '2 pages'
+      },
+      {
+        Type: 'State',
+        Feature: 'On Production'
+      }
+      // {
+      //   Type: 'Users',
+      //   Feature: '10 - 30 unique users daily'
+      // }
+    ],
+    MainImage: 'Edu_Dashboard.png',
+    Tecnologies: ['React', 'Express', 'Rest API', 'Socket IO', 'Sql Server', 'AWS'],
+    TecnologiesDetail: [
+      { Type: 'FrontEnd', Content: ['HTML', 'Sass', 'Javascript', 'React.js', 'Rdlc Reports', 'Razor'] },
+      { Type: 'BackEnd', Content: ['Express.js', 'Graphql and Rest API', 'Sql Server'] },
+      { Type: 'Arquitecture', Content: ['AWS Amplify', 'AWS Elastic Beanstack'] },
+      { Type: 'Others', Content: ['WebPack', 'GitHub', 'CI/CD'] }
+    ],
+    Photos: [
+      {
+        Url: 'Edu_Dashboard.png',
+        Description: 'Dashboard to show some metric from day to diferents users'
+      },
+      {
+        Url: 'Edu_Teachers.png',
+        Description: 'This view is to choose and modify teachers information, there is also a similar view for students'
+      }
+    ],
+    PreviousProject: 'Virtual Classroom'
   }
 ]
 

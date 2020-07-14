@@ -33,8 +33,13 @@ const Project_Educorp = ({ Show, Data, Actions }) => {
           </h3>
         </div>
         <div className='Tecnologies'>
-          {Data.Tecnologies.map(Tec => (
-            <p key={Tec}>{Tec}</p>
+          {Data.TecnologiesDetail.map(Tec => (
+            <div className='Type' key={Tec}>
+              <h4>{Tec.Type}</h4>
+              {Tec.Content.map(Cont => (
+                <p key={Cont}>{Cont}</p>
+              ))}
+            </div>
           ))}
         </div>
         <div className='Carrousel'>

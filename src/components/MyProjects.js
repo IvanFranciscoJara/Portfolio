@@ -5,7 +5,7 @@ import Project from './Project'
 import JsonProject from '../Data'
 
 const EstadoInicial = {
-  ShowModal: false,
+  ShowModal: true,
   Data: JsonProject[0]
 }
 const reducer = (state, action) => {
@@ -59,12 +59,17 @@ const MyProjects = () => {
                 <p key={Description}>{Description}</p>
               ))}
             </div>
-            <div className='Project__Info__Features'>
+            {/* <div className='Project__Info__Features'>
               {Project.Features.map(Feature => (
                 <p key={Feature.Type}>
                   <span>{Feature.Type}: </span>
                   {Feature.Feature}
                 </p>
+              ))}
+            </div> */}
+            <div className='Project__Info__Tecnologies'>
+              {Project.Tecnologies.map(Tec => (
+                <p key={Tec}>{Tec}</p>
               ))}
             </div>
           </div>
