@@ -12,7 +12,7 @@
     align-items: center
     background-color: $P_Black
     @media screen and (max-width: 800px)
-        display: block
+        flex-direction: column
     .TitleOne        
         position: absolute
         display: flex
@@ -27,17 +27,25 @@
                 overflow: hidden
                 color: $P_SoftGray                           
     .Text
+        width: 40%
+        // border: 1px solid red
         color: $P_White
-        z-index: 22
+        z-index: 1
         position: relative
-        h2
-            width: 50%
-            margin-left: 100px
+        h2                        
             font-size: 48px
             font-weight: 600
-            @media screen and (max-width: 800px)
-                font-size: 30px
-                margin: 0
-                padding: 25px
-                width: 100%
+        @media screen and (max-width: 800px)
+            width: 100%          
+            padding: 30px
+            h2
+                font-size: 24px
+    img
+        z-index: 2
+        margin-left: 100px
+        border: 1px solid $gray-900
+        width: 30%
+        @media screen and (max-width: 800px)
+            margin-left: 0
+            width: 60%          
 

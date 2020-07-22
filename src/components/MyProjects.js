@@ -5,7 +5,7 @@ import Project from './Project'
 import JsonProject from '../Data'
 
 const EstadoInicial = {
-  ShowModal: true,
+  ShowModal: false,
   Data: JsonProject[0]
 }
 const reducer = (state, action) => {

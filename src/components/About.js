@@ -20,6 +20,7 @@ const About = () => {
           years using web tecnologies.
         </h2>
       </div>
+      <img src='../imagenes/Me.png' />
     </div>
   )
 }

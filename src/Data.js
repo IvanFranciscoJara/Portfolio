@@ -25,14 +25,14 @@ let Projects = [
     Tecnologies: ['ASP.NET', 'Javascript', 'Boostrap', 'C#', 'Rdlc Reports', 'Sql Server'],
     TecnologiesDetail: [
       { Type: 'FrontEnd', Content: ['HTML', 'CSS', 'Javascript', 'Boostrap', 'Rdlc Reports', 'Razor'] },
-      { Type: 'BackEnd', Content: ['C#', 'ASP.NET', 'Sql Server', 'HTML'] },
-      { Type: 'Arquitecture', Content: ['IIS'] },
-      { Type: 'Others', Content: ['IIS'] }
+      { Type: 'BackEnd', Content: ['C#', 'ASP.NET', 'Sql Server'] },
+      { Type: 'Arquitecture', Content: ['IIS'] }
+      // { Type: 'Others', Content: ['IIS'] }
     ],
     Photos: [
       {
         Url: 'Edu_Dashboard.png',
-        Description: 'Dashboard to show some metric from day to diferents users'
+        Description: 'Dashboard to show some metric from the day to diferents users'
       },
       {
         Url: 'Edu_Teachers.png',
@@ -44,7 +44,7 @@ let Projects = [
       },
       {
         Url: 'Edu_Uniforms.png',
-        Description: 'There is option to sale school uniforms'
+        Description: 'In this screen, the school also can sell uniforms to students'
       },
       {
         Url: 'Edu_Report.png',
@@ -75,33 +75,41 @@ let Projects = [
         Feature: '4500 - 5000 unique users daily'
       }
     ],
-    MainImage: 'Edu_Dashboard.png',
+    MainImage: 'VirtClas_Notification.png',
     Tecnologies: ['React', 'Express', 'Graphql', 'Rest API', 'Sql Server'],
     TecnologiesDetail: [
-      { Type: 'FrontEnd', Content: ['HTML', 'Sass', 'Javascript', 'React.js', 'Rdlc Reports', 'Razor'] },
+      { Type: 'FrontEnd', Content: ['React', 'React Router', 'HTML', 'Sass', 'Javascript'] },
       { Type: 'BackEnd', Content: ['Express.js', 'Graphql and Rest API', 'Sql Server'] },
-      { Type: 'Arquitecture', Content: ['IIS'] },
+      { Type: 'Arquitecture', Content: ['IIS', 'AWS S3', ' AWS CloudFront'] },
       { Type: 'Others', Content: ['WebPack', 'JsonWebToken'] }
     ],
     Photos: [
       {
-        Url: 'Edu_Dashboard.png',
-        Description: 'Dashboard to show some metric from day to diferents users'
+        Url: 'VirtClas_Notification.png',
+        Description: 'View to show notifications to students'
       },
       {
-        Url: 'Edu_Teachers.png',
-        Description: 'This view is to choose and modify teachers information, there is also a similar view for students'
+        Url: 'VirtClas_ListClass.png',
+        Description: 'This view show the classes that are avaiable to the students'
+      },
+      {
+        Url: 'VirtClas_Class.png',
+        Description: 'Class from a student -> videos and files'
+      },
+      {
+        Url: 'VirtClas_Exam.png',
+        Description: 'This is an example of evaluation, the student need to upload photos with their answers'
       }
     ],
-    NextProject: 'ClickChat',
+    NextProject: 'HELLÖ',
     PreviousProject: 'Educorp'
   },
   {
-    Title: 'ClickChat',
+    Title: 'HELLÖ',
     Time: '2020 - now',
     Descriptions: [
-      'This aplication was build with the intention to give users a way to send message privatly with out registratión or data store',
-      'You can message, files, photos and audios also can create private chat groups'
+      'This aplication was build with the intention to give users a way to send message with out registratión or data store',
+      'send message, files and photos '
     ],
     Role: 'Frontend, backend, database',
     Features: [
@@ -118,22 +126,18 @@ let Projects = [
       //   Feature: '10 - 30 unique users daily'
       // }
     ],
-    MainImage: 'Edu_Dashboard.png',
+    MainImage: 'Hello_Intro.png',
     Tecnologies: ['React', 'Express', 'Rest API', 'Socket IO', 'Sql Server', 'AWS'],
     TecnologiesDetail: [
-      { Type: 'FrontEnd', Content: ['HTML', 'Sass', 'Javascript', 'React.js', 'Rdlc Reports', 'Razor'] },
-      { Type: 'BackEnd', Content: ['Express.js', 'Graphql and Rest API', 'Sql Server'] },
+      { Type: 'FrontEnd', Content: ['React', 'Socket IO', 'HTML', 'Sass', 'Javascript'] },
+      { Type: 'BackEnd', Content: ['Express.js', 'Socket IO', 'Rest API', 'Mongo DB'] },
       { Type: 'Arquitecture', Content: ['AWS Amplify', 'AWS Elastic Beanstack'] },
       { Type: 'Others', Content: ['WebPack', 'GitHub', 'CI/CD'] }
     ],
     Photos: [
       {
-        Url: 'Edu_Dashboard.png',
-        Description: 'Dashboard to show some metric from day to diferents users'
-      },
-      {
-        Url: 'Edu_Teachers.png',
-        Description: 'This view is to choose and modify teachers information, there is also a similar view for students'
+        Url: 'Hello_Intro.png',
+        Description: 'First screens from the application'
       }
     ],
     PreviousProject: 'Virtual Classroom'
