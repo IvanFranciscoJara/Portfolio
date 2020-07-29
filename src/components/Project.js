@@ -46,7 +46,11 @@ const Project_Educorp = ({ Show, Data, Actions }) => {
           {Data.Photos.map((Photo, Index) => (
             <div className='Carrousel__Item' key={Index}>
               <p>{Photo.Description}</p>
-              <img id={`Imagen${Index}`} src={`../imagenes/MyProjects/${Photo.Url}`}></img>
+              {/* <img id={`Imagen${Index}`} src={`../imagenes/MyProjects/${Photo.Url}`}></img> */}
+              <img
+                id={`Imagen${Index}`}
+                src={`https://imageneslibres.s3.amazonaws.com/ImagenesPortafolio/${Photo.Url}`}
+              ></img>
             </div>
           ))}
         </div>

@@ -11,7 +11,8 @@ module.exports = env => {
       path: path.resolve(__dirname, 'dist'),
       filename: 'index_bundle.js'
     },
-    devtool: '#eval-source-map',
+    // devtool: 'source-map',
+    devtool: env.TIPO === 'local' ? 'source-map' : 'eval',
     devServer: {
       port: 9000
     },
@@ -26,7 +27,7 @@ module.exports = env => {
         { test: /\.(gif|svg|jpg|png)$/, loader: 'file-loader' }
       ]
     },
-    mode: 'development',
+    mode: env.TIPO === 'local' ? 'development' : 'production',
     plugins: [
       new HtmlWebpackPlugin({
         template: 'src/index.html'

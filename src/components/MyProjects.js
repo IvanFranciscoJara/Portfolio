@@ -36,7 +36,7 @@ const MyProjects = () => {
     dispatch({ type: 'otherProject', ProjectName: ProjectName })
     document.querySelector('.ProjectTitle').scrollIntoView({ behavior: 'smooth', block: 'end' })
   }
-  console.log(state)
+  console.log(state, 'new:D')
   return (
     <div className='ContainerMyProjects'>
       <div className='TitleOne'>
@@ -75,7 +75,8 @@ const MyProjects = () => {
           </div>
           <div className='Project__Image' onClick={() => ShowModal(Project)}>
             <button className=''>View More</button>
-            <img src={`../imagenes/MyProjects/${Project.MainImage}`}></img>
+            <img src={`https://imageneslibres.s3.amazonaws.com/ImagenesPortafolio/${Project.MainImage}`}></img>
+            {/* <img id={`Imagen${Index}`} src={`https://imageneslibres.s3.amazonaws.com/${Photo.Url}`}></img> */}
           </div>
         </div>
       ))}
