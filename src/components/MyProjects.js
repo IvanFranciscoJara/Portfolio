@@ -75,7 +75,10 @@ const MyProjects = () => {
           </div>
           <div className='Project__Image' onClick={() => ShowModal(Project)}>
             <button className=''>View More</button>
-            <img src={`https://imageneslibres.s3.amazonaws.com/ImagenesPortafolio/${Project.MainImage}`}></img>
+            <img
+              src={`https://imageneslibres.s3.amazonaws.com/ImagenesPortafolio/${Project.MainImage}`}
+              alt='Project image'
+            />
             {/* <img id={`Imagen${Index}`} src={`https://imageneslibres.s3.amazonaws.com/${Photo.Url}`}></img> */}
           </div>
         </div>

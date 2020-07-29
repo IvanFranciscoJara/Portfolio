@@ -50,6 +50,7 @@ const Project_Educorp = ({ Show, Data, Actions }) => {
               <img
                 id={`Imagen${Index}`}
                 src={`https://imageneslibres.s3.amazonaws.com/ImagenesPortafolio/${Photo.Url}`}
+                alt='Project main image'
               ></img>
             </div>
           ))}
