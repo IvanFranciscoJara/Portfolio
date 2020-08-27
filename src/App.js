@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.sass'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,16 +7,17 @@ import ContactMe from './components/ContactMe'
 // import './components/ContactMe'
 
 const App = props => {
+  const [lan, setLang] = useState('en')
   return (
     <div className='ContainerApp'>
       <div className='Section'>
-        <Hero />
+        <Hero setLang={setLang} />
       </div>
-      <div className='Section'>
+      {/* <div className='Section'>
         <About />
-      </div>
+      </div> */}
       <div className='Section'>
-        <MyProjects />
+        <MyProjects lan={lan} />
       </div>
       <div className='Section'>
         <ContactMe />

@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import './sass/Project.sass'
 import { IconClose } from '../icons'
+import { useTranslation } from 'react-i18next'
+
 // import { title } from 'process'
 // const util = require('util')
 const Project_Educorp = ({ Show, Data, Actions }) => {
+  const { t } = useTranslation()
   // const [imagenActual, setImagenActual] = useState(0)
 
   const Cerrar = () => {
@@ -28,7 +31,7 @@ const Project_Educorp = ({ Show, Data, Actions }) => {
         </div>
         <div className='Role'>
           <h3>
-            <span>Role: </span>
+            <span>{t('Project.Role')}</span>
             {Data.Role}
           </h3>
         </div>
@@ -58,11 +61,13 @@ const Project_Educorp = ({ Show, Data, Actions }) => {
         <div className='NextProject'>
           {Data.PreviousProject && (
             <button onClick={() => OtherProject(Data.PreviousProject)}>
-              Previous Project - {Data.PreviousProject}
+              {t('Project.Previous_project')} - {Data.PreviousProject}
             </button>
           )}
           {Data.NextProject && (
-            <button onClick={() => OtherProject(Data.NextProject)}>Next Project - {Data.NextProject} </button>
+            <button onClick={() => OtherProject(Data.NextProject)}>
+              {t('Project.Next_project')} - {Data.NextProject}
+            </button>
           )}
         </div>
       </div>

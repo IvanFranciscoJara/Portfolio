@@ -14,14 +14,18 @@ module.exports = env => {
     // devtool: 'source-map',
     devtool: env.TIPO === 'local' ? 'source-map' : 'eval',
     devServer: {
-      port: 9000
+      port: 9000,
+      compress: true,
+      hot: true,
+      stats: 'errors-only',
+      open: true
     },
     node: {
       fs: 'empty'
     },
     module: {
       rules: [
-        { test: /\.(js)$/, use: 'babel-loader' },
+        { test: /\.(js)$/, exclude: /node_modules/, use: 'babel-loader' },
         { test: /\.css$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
         { test: /\.sass$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
         { test: /\.(gif|svg|jpg|png)$/, loader: 'file-loader' }

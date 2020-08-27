@@ -1,0 +1,114 @@
+@import '../../Global'
+
+.ContainerMyProjects
+    position: relative
+    background-color: $P_White
+    width: 100%
+    min-height: 100vh
+    padding: 0
+    // overflow: hidden
+    // overflow: auto
+    background-color: $P_White
+    // padding-top: 100px
+    @media screen and (max-width: 800px)
+        padding-top: 10px
+    .TitleOne        
+        position: absolute
+        display: flex
+        width: 100%
+        height: 100% 
+        // border: 1px solid red
+        .Title
+            // border: 1px solid green
+            width: 100%
+            top: 0            
+            .TitleBackground       
+                overflow: hidden
+                color: $P_SoftWhite
+                
+    .Project        
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 60px 40px
+        // border: 1px solid $red        
+        border-bottom: 1px solid $gray-400
+        @media screen and (max-width: 800px)
+            margin-bottom: 30px
+            padding: 10px
+            display: block
+        // border: 1px solid blue
+        &__Info
+            flex: 2
+            padding: 40px
+            @media screen and (max-width: 800px)
+                padding: 20px
+            &__Title                
+                margin-bottom: 20px
+                color: $P_Black
+                h2
+                    display: inline-block                
+                .Time
+                    border: 1px solid $P_Blue
+                    padding: 0 10px
+                    margin-left: 15px
+                    border-radius: 20px
+                    color: $P_Blue                    
+            &__Description
+                margin-bottom: 15px
+                p
+                    color: $P_Black
+                    margin-bottom: 5px
+            &__Features                                
+                p
+                    text-align: center                    
+            &__Tecnologies
+                margin-bottom: 15px
+                p
+                    font-size: 18px
+                    display: inline-block
+                    padding: 7px 15px
+                    border: 1px solid $P_Black
+                    margin: 5px
+                    background-color: $P_White
+                        // background-color: $red
+        &__Image    
+            flex: 3
+            border: 3px solid $P_Black
+            padding: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            overflow: hidden
+            cursor: pointer
+            button
+                position: absolute
+                height: 50px
+                width: 150px
+                top: -50% 
+                left: 50%
+                margin-top: -25px
+                margin-left: -75px
+                z-index: 2
+                border: 2px solid $P_Black
+                background-color: $P_SoftWhite
+                color: $P_Black
+                font-size: 20px
+                font-family: 'Montserrat', sans-serif
+                transition: .3s ease
+                cursor: pointer
+            img                 
+                z-index: 1
+                width: 80%                
+                transition: .5s ease
+            &:hover
+                img
+                    // margin-top: -50px
+                    // width: 100%                
+                    filter: grayscale(100%)
+                button 
+                    top: 50% 
+                    // filter: contrast(200%)

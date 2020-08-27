@@ -2,7 +2,7 @@
 
 .ContainerContactMe
     position: relative
-    background-color: $P_White
+    // background-color: $P_White
     width: 100%
     min-height: 100vh
     padding: 0
@@ -11,14 +11,11 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    background-color: $P_Black
+    // background-color: $P_Black
 
-    .Title
-        position: absolute
-        top: -10px
-        left: -50px
-        .TitleBackground                                            
-            color: $P_SoftGray      
+    .Contact_Me
+        font-size: 20px
+        color: $P_White
     .Email
         color: $P_White
         z-index: 22
@@ -36,14 +33,14 @@
         z-index: 22
         display: flex
         justify-content: center
-        align-items: center
-        div            
+        align-items: center        
+        div                        
             height: 150px
             width: 150px
             display: flex
             justify-content: center
             align-items: center
-            // border: 1px solid red
+            cursor: pointer
             @media screen and (max-width: 800px)
                 height: 70px
                 width: 70px

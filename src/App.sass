@@ -3,13 +3,18 @@
 body
     &::-webkit-scrollbar
         width: 10px
-        background-color: $P_White        
+        background-color: $F_Fondo        
     &::-webkit-scrollbar-thumb
-        background-color: $P_Black
+        background-color: $gray-800
         opacity: 0.9
+        border-radius: 5px
+        cursor: pointer
     // overflow: scroll
 
 .ContainerApp
+    background-color: $F_Fondo
+    // border: 1px solid red
+    // width: 100vw    
     // height: 100vh
     // scroll-snap-type: mandatory
     // scroll-snap-points-y: repeat(100vh)
@@ -20,4 +25,4 @@ body
     .Section        
         // scroll-snap-align: start end
         // scroll-snap-align: end
-        width: 100%        
+        // border: 1px solid purple  

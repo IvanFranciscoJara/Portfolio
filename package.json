@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "webpack --env.TIPO=dev",
-    "dev": "webpack-dev-server --env.TIPO=dev"
+    "dev": "webpack-dev-server --env.TIPO=local"
   },
   "author": "",
   "license": "ISC",
@@ -22,8 +22,10 @@
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "i18next": "^19.7.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.1",
     "sass": "^1.26.9",
     "sass-loader": "^9.0.0",
     "style-loader": "^1.2.1",

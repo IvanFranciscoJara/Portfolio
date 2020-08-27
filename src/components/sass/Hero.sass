@@ -2,7 +2,7 @@
 
 .ContainerHero
     position: relative
-    background-color: $P_White
+    // border: 1px solid red
     width: 100%
     min-height: 100vh
     padding: 0
@@ -10,6 +10,22 @@
     display: flex
     justify-content: center
     align-items: center
+    @media screen and (max-width: 800px)
+        flex-direction: column
+    .Language
+        position: absolute
+        top: 0px
+        right: 0px
+        width: 60px
+        height: 60px
+        // border: 1px solid red
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        svg
+            height: 60%
+            width: 60%
     .Logo        
         top: 50px
         left: 50px
@@ -25,9 +41,9 @@
             display: flex
             justify-content: center
             align-items: center
-            transition: 1s ease
-            .Cuadrado
-                background-color: $P_Black
+            transition: 1s ease            
+            .Cuadrado                
+                background-color: $F_Letras
                 width: 100%
                 height: 100%
                 position: absolute
@@ -36,6 +52,8 @@
                 z-index: 1
                 animation: animacuadrado 5s ease 0s infinite
             svg
+                color: $F_Fondo
+                fill: $F_Fondo
                 z-index: 2
                 transition: 1s ease
         @keyframes animacuadrado 
@@ -51,7 +69,8 @@
                 font-weight: 800
                 font-size: 24px
                 font-family: 'Montserrat', sans-serif
-                color: $P_Black
+                color: $F_Letras
+                // color: $P_Black
             h1:nth-child(1)                
                 animation: animaIvan 5s ease 0s infinite
             h1:nth-child(2)                
@@ -78,22 +97,72 @@
                     transform: translateX(0px)
                 100%
                     transform: translateX(0px)
-    .Title       
-        width: 90%        
-        h2
-            display: inline-block            
-            color: $P_Black
-            font-size: 48px            
-            text-align: center
-            @media screen and (max-width: 800px)
-                font-size: 30px
-            span
-                &.blue
-                    color: $P_Blue
-                &.red
-                    color: $P_Red
-                &.green
-                    color: $P_Green
-        //     h1
+    .Text        
+        width: 40%
+        color: $P_White
+        z-index: 1
+        position: relative
+        color: $F_Letras
+        h2                        
+            font-size: 39px
+            font-weight: 600
+            margin-bottom: 20px
+        h4 
+            font-size: 24px
+            font-weight: 200
+            margin-bottom: 40px  
+        .download_resume
+            display: inline-block
+            cursor: pointer
+            &:hover
+                .Linea
+                    width: 110%
+                h6 
+                    color: $white
+            h6             
+                margin-bottom: 3px   
+                transition: .3s ease
+                font-size: 13px
+            .Linea      
+                background-color: $white
+                height: 1.5px
+                transition: .3s ease
+                width: 0%
+
+        @media screen and (max-width: 800px)
+            width: 100%          
+            padding: 30px
+            h2
+                font-size: 24px
+                margin-bottom: 5px
+            h4
+                font-size: 15px
+                margin-bottom: 20px
+    img
+        border: 1px solid red
+        z-index: 2
+        margin-left: 100px
+        border: 1px solid $gray-900
+        width: 30%
+        @media screen and (max-width: 800px)
+            margin-left: 0
+            width: 60%     
+    // .Title       
+    //     width: 90%        
+    //     h2
+    //         display: inline-block            
+    //         color: $P_Black
+    //         font-size: 48px            
+    //         text-align: center
+    //         @media screen and (max-width: 800px)
+    //             font-size: 30px
+    //         span
+    //             &.blue
+    //                 color: $P_Blue
+    //             &.red
+    //                 color: $P_Red
+    //             &.green
+    //                 color: $P_Green
+    //     //     h1
 
   

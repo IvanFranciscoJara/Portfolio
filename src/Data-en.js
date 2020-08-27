@@ -1,7 +1,7 @@
 let Projects = [
   {
     Title: 'Educorp',
-    Time: '2017 - now',
+    Time: '2017',
     Descriptions: [
       'This is a large-scale software for schools in Perú that helps in many areas.',
       'Accounting - Payments - Academic Management - Student Assistance - Issuance of vouchers - Payroll Management - etc'
@@ -21,13 +21,12 @@ let Projects = [
         Feature: '40 - 50 unique users daily'
       }
     ],
-    MainImage: 'Edu_Dashboard.png',
+    MainImage: 'Edu_Fondo.png',
     Tecnologies: ['ASP.NET', 'Javascript', 'Boostrap', 'C#', 'Rdlc Reports', 'Sql Server'],
     TecnologiesDetail: [
       { Type: 'FrontEnd', Content: ['HTML', 'CSS', 'Javascript', 'Boostrap', 'Rdlc Reports', 'Razor'] },
-      { Type: 'BackEnd', Content: ['C#', 'ASP.NET', 'Sql Server'] },
-      { Type: 'Arquitecture', Content: ['IIS'] }
-      // { Type: 'Others', Content: ['IIS'] }
+      { Type: 'BackEnd', Content: ['Sql Server', 'C#', 'ASP.NET'] },
+      { Type: 'Deployment', Content: ['IIS'] }
     ],
     Photos: [
       {
@@ -36,11 +35,12 @@ let Projects = [
       },
       {
         Url: 'Edu_Teachers.png',
-        Description: 'This view is to choose and modify teachers information, there is also a similar view for students'
+        Description:
+          'This screen is to choose and modify teachers information, there is also a similar screen for students'
       },
       {
         Url: 'Edu_Time.png',
-        Description: 'This is the view to change time of entrance from a teacher'
+        Description: 'This is the screen to change time of entrance from a teacher'
       },
       {
         Url: 'Edu_Uniforms.png',
@@ -55,7 +55,7 @@ let Projects = [
   },
   {
     Title: 'Virtual Classroom',
-    Time: '2019 - now',
+    Time: '2019',
     Descriptions: [
       'This project was build to let schools give virtual classes to their students',
       'Videos, documents, evaluations, notice'
@@ -75,22 +75,22 @@ let Projects = [
         Feature: '4500 - 5000 unique users daily'
       }
     ],
-    MainImage: 'VirtClas_Notification.png',
+    MainImage: 'VirtClas_Fondo.png',
     Tecnologies: ['React', 'Express', 'Graphql', 'Rest API', 'Sql Server'],
     TecnologiesDetail: [
       { Type: 'FrontEnd', Content: ['React', 'React Router', 'HTML', 'Sass', 'Javascript'] },
-      { Type: 'BackEnd', Content: ['Express.js', 'Graphql and Rest API', 'Sql Server'] },
-      { Type: 'Arquitecture', Content: ['IIS', 'AWS S3', ' AWS CloudFront'] },
+      { Type: 'BackEnd', Content: ['Sql Server', 'Express.js', 'Graphql and Rest API'] },
+      { Type: 'Deployment', Content: ['IIS', 'AWS S3', ' AWS CloudFront'] },
       { Type: 'Others', Content: ['WebPack', 'JsonWebToken'] }
     ],
     Photos: [
       {
         Url: 'VirtClas_Notification.png',
-        Description: 'View to show notifications to students'
+        Description: 'Screen to show notifications to students'
       },
       {
         Url: 'VirtClas_ListClass.png',
-        Description: 'This view show the classes that are avaiable to the students'
+        Description: 'This screen show the classes that are avaiable to the students'
       },
       {
         Url: 'VirtClas_Class.png',
@@ -101,15 +101,15 @@ let Projects = [
         Description: 'This is an example of evaluation, the student need to upload photos with their answers'
       }
     ],
-    NextProject: 'HELLÖ',
+    NextProject: 'Itago',
     PreviousProject: 'Educorp'
   },
   {
-    Title: 'HELLÖ',
-    Time: '2020 - now',
+    Title: 'Itago',
+    Time: '2020',
     Descriptions: [
-      'This aplication was build with the intention to give users a way to send message with out registratión or data store',
-      'send message, files and photos '
+      'Progressive Web Aplication to create chat rooms without registration',
+      'users can delete all their messages from the chatrooms.'
     ],
     Role: 'Frontend, backend, database',
     Features: [
@@ -121,22 +121,19 @@ let Projects = [
         Type: 'State',
         Feature: 'On Production'
       }
-      // {
-      //   Type: 'Users',
-      //   Feature: '10 - 30 unique users daily'
-      // }
     ],
-    MainImage: 'Hello_Intro.png',
+    LivePreview: 'https://www.itago.net',
+    MainImage: 'Hello_Fondo.png',
     Tecnologies: ['React', 'Express', 'Rest API', 'Socket IO', 'Sql Server', 'AWS'],
     TecnologiesDetail: [
       { Type: 'FrontEnd', Content: ['React', 'Socket IO', 'HTML', 'Sass', 'Javascript'] },
-      { Type: 'BackEnd', Content: ['Express.js', 'Socket IO', 'Rest API', 'Mongo DB'] },
-      { Type: 'Arquitecture', Content: ['AWS Amplify', 'AWS Elastic Beanstack'] },
+      { Type: 'BackEnd', Content: ['Mongo DB', 'Express.js', 'Socket IO', 'Rest API'] },
+      { Type: 'Deployment', Content: ['AWS Amplify', 'AWS Elastic Beanstack'] },
       { Type: 'Others', Content: ['WebPack', 'GitHub', 'CI/CD'] }
     ],
     Photos: [
       {
-        Url: 'Hello_Intro.png',
+        Url: 'Hello_Fondo.png',
         Description: 'First screens from the application'
       }
     ],
